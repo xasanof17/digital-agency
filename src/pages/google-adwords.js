@@ -1,9 +1,13 @@
-import React from 'react'
+import Head from "next/head";
+import React from "react";
 
-export default function GoogleAdwards() {
+export default function GoogleAdwords() {
   return (
     <>
-      Google Adwards
+      <Head>
+        <title>Google Adwords</title>
+      </Head>
+      Google Adwords
     </>
-  )
+  );
 }
