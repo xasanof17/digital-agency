@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="author" content="Xasanov Javohir xasanof17@gmail.com" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <body>
+      <body className='bg-white font-inter'>
         <Main />
         <NextScript />
       </body>
