@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { images, navlinks } from "../constants";
@@ -7,9 +8,14 @@ import { MdOutlineClose } from "react-icons/md";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  if (toggleMenu) {
-    console.log(toggleMenu);
-  }
+  const router = useRouter();
+  const [linkHref, setLinkHref] = useState("/");
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    // router.push('/');
+  };
+
   return (
     <nav className="sticky top-0 left-0 w-full bg-white lg:bg-darkblue">
       <div className="mx-4 md:mx-[40px] lg:mx-[30px]">
@@ -31,7 +37,7 @@ function Navbar() {
               {navlinks.map((link, i) => (
                 <li key={i}>
                   <Link href={link.href}>
-                    <a className="capitalize text-seadrive hover:text-white text-[16px] leading-5 font-medium duration-300">
+                    <a className="capitalize text-seadrive hover:text-white text-[16px] leading-5 font-medium duration-300 navlink">
                       {link.name}
                     </a>
                   </Link>
@@ -82,7 +88,7 @@ function Navbar() {
                   {navlinks.map((link, i) => (
                     <li key={i}>
                       <Link href={link.href}>
-                        <a className="capitalize text-blankstare hover:text-blue duration-300 text-[16px] leading-5 font-medium">
+                        <a className="capitalize text-blankstare hover:text-blue duration-300 text-[16px] leading-5 font-medium navlink">
                           {link.name}
                         </a>
                       </Link>

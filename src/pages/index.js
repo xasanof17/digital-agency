@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Digital Agency</title>
       </Head>
-      <h1 className="font-bold underline">Hello World</h1>
+      <h1 className="font-bold underline">Digital Agency</h1>
     </div>
   );
 }
