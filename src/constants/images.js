@@ -3,7 +3,7 @@ import darklogo from "../assets/img/dark-logo.svg";
 
 const images = {
   logo,
-  darklogo
+  darklogo,
 };
 
 export default images
