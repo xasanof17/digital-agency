@@ -7,7 +7,7 @@ const Accordion = () => {
 
   const data = accordionData
   return (
-    <div className="flex flex-col justify-center items-center md:mx-30 p-16 rounded-xl h-auto py-20">
+    <div className="flex flex-col justify-center items-center md:mx-30 lg:p-16 ss:p-0 rounded-xl h-auto py-20 ">
       {data.map((data) => {
         return (
           <AccordionUI

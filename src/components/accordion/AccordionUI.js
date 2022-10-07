@@ -1,14 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
 const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
-  const handleSetIndex = (Id) => Index !== Id && setIndex(Id);
+    const [idState,setIdState] = useState(1)
+  const handleSetIndex = (Id) => {
+    setIdState(Id)
+    Index !== idState && setIndex(Id);
+  }
 
   return (
     <>
       <div
         onClick={() => handleSetIndex(Id)}
-        className="flex  cursor-pointer w-full h-16 items-center p-2 mt-2 rounded-md bg-white hover:bg-#EDF4FA hover:shadow-lg focus:bg-#EDF4FA "
+        className="flex  cursor-pointer w-full h-16 items-center p-2 mt-2 bg-white hover:bg-#EDF4FA hover:shadow-lg focus:bg-#EDF4FA  border-b-2 border-seadrive"
       >
          {Index !== Id ? (
             <AiOutlinePlusCircle className="w-6 h-6 group-hover:text-white " />
