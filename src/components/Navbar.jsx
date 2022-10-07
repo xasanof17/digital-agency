@@ -11,7 +11,7 @@ function Navbar() {
     console.log(toggleMenu);
   }
   return (
-    <nav className="sticky top-0 left-0 w-full bg-white lg:bg-darkblue">
+    <nav className="sticky top-0 left-0 w-full bg-white lg:bg-darkblue z-10">
       <div className="mx-4 md:mx-[40px] lg:mx-[30px]">
         <div
           className={`flex items-center justify-between flex-wrap py-4 lg:py-[30px]`}

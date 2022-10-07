@@ -18,11 +18,13 @@ function Footer() {
 }
   return (
     <footer className="w-full bg-[url('../assets/img/footer-background.png')] md:h-[874px] sm:h-[763px] ss:h-[1368px] pt-[80px] ">
-      <div className="footer-brand lg:ml-[170px] sm:ml-[50px] md:ml-[30px] ss:absolute ss:top-96 sm:static md:static lg:static ">
+      <div className="footer-brand lg:ml-[170px] sm:ml-[50px] md:ml-[30px] ss:hidden sm:block md:block lg:block ">
       <Image src={images.darklogo} alt="logo"/>
       </div>
+      {/* information */}
       <div className="flex justify-center">
       <div className="contacts flex flex-wrap flex-row-reverse">
+        {/* form */}
       <div className="contacts_letter lg:w-[500px] lg:h-[600px] md:w-[462px] md:h-[600px] sm:w-[350px] sm:h-[610px] bg-blue mt-[-45px] p-[20px] ss:w-[320px] rounded">
           <h1 className="text-white text-xl mt-8 ml-6">Есть вопросы? </h1>
           <p className="text-white text-base mt-6 ml-6">Свяжитесь с нами</p>
@@ -49,7 +51,8 @@ function Footer() {
     </div>
   </form>
         </div>
-        <div className="contacts_items ss:mt-20 sm:mt-0 md:mt-0 lg:mt-0">
+        {/* infos */}
+        <div className="contacts_items ss:mt-20 sm:mt-0 md:mt-0 lg:mt-0 ss:ml-10 md:ml-0 lg:ml-0">
           <div className="number mt-4">
             <p className="text-seadrive text-sm">Телефон</p>
             <div className="flex sm:flex-col md:flex-row ss:flex-col">
