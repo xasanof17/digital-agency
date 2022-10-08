@@ -3,6 +3,8 @@ import { images } from "../constants";
 import Image from "next/image";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import FoooterLayout from '../components/Footer.Layout'
+
 
 export default function SMM() {
   const zoomInProperties = {
@@ -36,7 +38,11 @@ export default function SMM() {
 	};
   return (
     <>
-      <section className="bg-darkblue w-full pt-14 mt-16">
+    <header className="w-full header bg-[url('../assets/img/smm-background.png')] md:h-[416px] ss:h-[310px] pt-[70px]">
+        <h1 className="text-white md:text-xxl sm:text-xl ss:text-xl md:w-[800px] ss:w-[288px] sm:w-[560px] ml-40 sm:ml-20 ss:ml-8">Продвижение в Facebook и Instagram для сферы услуг</h1>
+        <p className="text-white text-base md:w-[560px] ss:w-[290px] sm:w-[560px] ml-40 sm:ml-20 ss:ml-8">От ведения страниц до таргетированной рекламы</p>
+      </header>
+      <section className="bg-darkblue w-full pt-14">
       <h1 className="text-xl text-white mb-0 mt-10 text-center">Почему нужно использовать таргетированную рекламу в Facebook и Instagram?​</h1>
       <div className="flex justify-around align-center md:h-[302px] mt-4 ss:hidden sm:flex">
         <div className="w-[20%] border-t-[2px] border-blankstare mt-6 pt-4">
@@ -79,6 +85,8 @@ export default function SMM() {
 </Zoom>
 </div>
       </section>
+      <FoooterLayout/>
+
     </>
   );
 }

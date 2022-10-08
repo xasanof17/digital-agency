@@ -13,7 +13,7 @@ const Accordion = (data) => {
           <AccordionUI
             title={data.question}
             Id={data.id}
-            children={data.steps}
+            main={data.steps}
             Index={Index}
             setIndex={setIndex}
           ></AccordionUI>
