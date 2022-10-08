@@ -24,10 +24,10 @@ function Navbar() {
         >
           <Link href={"/"}>
             <a className="flex items-center justify-center">
-              <span className="hidden lg:block">
+              <span className="hidden lg:flex items-center justify-center">
                 <Image src={images.logo} alt="logo" />
               </span>
-              <span className="block lg:hidden">
+              <span className="flex items-center justify-center lg:hidden">
                 <Image src={images.darklogo} alt="logo" />
               </span>
             </a>
