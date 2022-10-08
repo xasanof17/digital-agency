@@ -4,22 +4,23 @@ import AccordionUI from "./AccordionUI";
 const Accordion = (data) => {
   const [Index, setIndex] = useState(false);
 
-  const accData = data
-  console.log(accData)
+  const accData = data;
+  console.log(accData);
   return (
     <div className="flex flex-col justify-center items-center md:mx-30 lg:p-16 ss:p-0 rounded-xl h-auto py-20 ">
-      {accData.data.map((data) => {
+      {accData.data.map((data, i) => {
         return (
           <AccordionUI
+            key={i}
             title={data.question}
             Id={data.id}
             children={data.steps}
             Index={Index}
             setIndex={setIndex}
-          ></AccordionUI>
+          />
         );
       })}
-        </div>
+    </div>
   );
 };
 export default Accordion;
