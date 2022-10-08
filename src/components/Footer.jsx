@@ -3,7 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer className="w-full">
-      <div className="container">footerbar</div>
+      <div className="container">
+        {/* this is footer component */}
+      </div>
     </footer>
   );
 }

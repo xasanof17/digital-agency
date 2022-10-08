@@ -37,6 +37,8 @@ module.exports = {
         blankstare: "#8B9BAB",
         bluedepths: "#242A56",
         seadrive: "#C1D3DE",
+        green: "#34A853",
+        red: "#FF0532",
       },
     },
   },
