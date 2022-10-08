@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 left-0 w-full bg-white lg:bg-darkblue">
+    <nav className="sticky top-0 left-0 w-full bg-white lg:bg-darkblue z-10">
       <div className="mx-4 md:mx-[40px] lg:mx-[30px]">
         <div
           className={`flex items-center justify-between flex-wrap py-4 lg:py-[30px]`}
@@ -47,15 +47,15 @@ function Navbar() {
             <div className="flex items-center sm:space-x-6">
               <button
                 className={`${
-                  toggleMenu && "hidden"
-                } hidden sm:block py-[14px] px-6 bg-transparent font-bold border border-blue lg:border-white rounded-xl text-[16px] leading-5 text-blue lg:text-white hover:bg-blue lg:hover:bg-white hover:text-white lg:hover:text-darkblue ease-linear duration-300`}
+                  toggleMenu ? "hidden" : "sm:block"
+                } hidden py-[14px] px-6 bg-transparent font-bold border border-blue lg:border-white rounded-xl text-[16px] leading-5 text-blue lg:text-white hover:bg-blue lg:hover:bg-white hover:text-white lg:hover:text-darkblue ease-linear duration-300`}
               >
                 Свяжитесь с нами
               </button>
               <button
                 className={`${
-                  toggleMenu && "hidden"
-                } hidden sm:block py-[14px] px-6 bg-transparent font-bold border border-blue lg:border-white rounded-xl text-[16px] leading-5 text-blankstare lg:text-seadrive hover:bg-blue lg:hover:bg-white hover:text-seadrive lg:hover:text-bluedepths ease-linear duration-300`}
+                  toggleMenu ? "hidden" : "sm:block"
+                } hidden  py-[14px] px-6 bg-transparent font-bold border border-blue lg:border-white rounded-xl text-[16px] leading-5 text-blankstare lg:text-seadrive hover:bg-blue lg:hover:bg-white hover:text-seadrive lg:hover:text-bluedepths ease-linear duration-300`}
               >
                 LV
               </button>
@@ -88,7 +88,10 @@ function Navbar() {
                   {navlinks.map((link, i) => (
                     <li key={i}>
                       <Link href={link.href}>
-                        <a className="capitalize text-blankstare hover:text-blue duration-300 text-[16px] leading-5 font-medium navlink">
+                        <a
+                          onClick={() => setToggleMenu((prv) => !prv)}
+                          className="capitalize text-blankstare hover:text-blue duration-300 text-[16px] leading-5 font-medium navlink"
+                        >
                           {link.name}
                         </a>
                       </Link>

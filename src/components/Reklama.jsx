@@ -15,7 +15,7 @@ const Reklama = () => {
             показатели. Если у вас все отлично, то мы так и скажем, прямо и без
             лишних слов.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-[40px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px] sm:gap-5 lg:gap-[40px]">
             <div className="pt-5 sm:pt-[30px] lg:pt-[40px] border-t-2 border-blankstare flex flex-col items-start">
               <div className="flex items-center justify-center mb-8 sm:mb-[25px] lg:mb-[40px]">
                 <Image src={images.adgoogle} alt="adgoogle" />
@@ -23,14 +23,14 @@ const Reklama = () => {
               <h3 className="font-bold text-[18px] leading-7 sm:leading-6 lg:text-lg text-white mb-3 lg:mb-6">
                 Реклама в Google
               </h3>
-              <p className="font-regular text-[16px] leading-6 lg:text-base text-white mb-6 lg:mb-8 h-[216px] md:h-[168px] lg:h-[140px]">
+              <p className="font-regular text-[16px] leading-6 lg:text-base text-white mb-6 lg:mb-8 sm:h-[187px] md:h-[168px] lg:h-[140px]">
                 Наше агентство занимается разработкой и внедрением стратегий
                 таргетированной и контекстной рекламы в Google. Мы помогаем
                 малому бизнесу в Латвии наладить бесперебойный поток
                 коммерческих сообщений до целевой аудитории.
               </p>
               <Link href={"/"}>
-                <button className="py-[18px] px-[40px] lg:px-[30px] rounded-xl hover:bg-bluedepths bg-blue hover:text-blue text-white font-bold text-[16px] leading-6 flex items-center space-x-6 duration-300">
+                <button className="py-[18px] w-full sm:w-fit text-center sm:px-[40px] lg:px-[30px] rounded-xl hover:bg-bluedepths bg-blue hover:text-blue text-white font-bold text-[16px] leading-6 flex items-center justify-center space-x-6 duration-300">
                   <span>Подробнее об услуге</span>
                   <span>
                     <BsArrowRight color="white" fontSize={16} />
@@ -38,7 +38,7 @@ const Reklama = () => {
                 </button>
               </Link>
             </div>
-            <div className="pt-5 sm:pt-[30px] lg:pt-[40px] border-t-2 border-blankstare flex flex-col items-start">
+            <div className="pt-6 md:pt-[30px] lg:pt-[40px] border-t-2 border-blankstare flex flex-col items-start">
               <div className="flex items-center justify-center mb-8 sm:mb-[25px] lg:mb-[40px]">
                 <span className="mr-3 flex items-center justify-center">
                   <Image src={images.facebooklogo} alt="adgoogle" />
@@ -58,7 +58,7 @@ const Reklama = () => {
                 можно большему количеству людей.
               </p>
               <Link href={"/"}>
-                <button className="py-[18px] px-[40px] lg:px-[30px] rounded-xl hover:bg-bluedepths bg-blue hover:text-blue text-white font-bold text-[16px] leading-6 flex items-center space-x-6 duration-300">
+                <button className="py-[18px] w-full sm:w-fit text-center sm:px-[40px] lg:px-[30px] rounded-xl hover:bg-bluedepths bg-blue hover:text-blue text-white font-bold text-[16px] leading-6 flex items-center justify-center space-x-6 duration-300">
                   <span>Подробнее об услуге</span>
                   <span>
                     <BsArrowRight color="white" fontSize={16} />
