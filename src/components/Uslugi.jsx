@@ -33,7 +33,7 @@ const carts = [
       { text: "до 10 кампаний" },
       {
         icon: (
-          <IoIosCheckmarkCircleOutline fontSize={25} className="text-green" />
+          <IoIosCheckmarkCircleOutline fontSize={25} className="text-green"/>
         ),
       },
       {
