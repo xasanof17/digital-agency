@@ -3,6 +3,7 @@ import { images } from "../constants";
 import Image from "next/image";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Head from "next/head";
 
 export default function SMM() {
   const zoomInProperties = {
@@ -36,6 +37,7 @@ export default function SMM() {
 	};
   return (
     <>
+     <Head><title>SMM</title></Head>
       <section className="bg-darkblue w-full pt-14 mt-16">
       <h1 className="text-xl text-white mb-0 mt-10 text-center">Почему нужно использовать таргетированную рекламу в Facebook и Instagram?​</h1>
       <div className="flex justify-around align-center md:h-[302px] mt-4 ss:hidden sm:flex">

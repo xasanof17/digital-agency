@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { images } from '../constants'
 import Accordion from "../components/accordion/Accordion";
 import { accordionDataAbout } from '../constants/accordion.data';
+import Head from 'next/head';
 
 export default function aboutus() {
   return (
     <>
+     <Head><title>О нас</title></Head>
      <header className="w-full header bg-[url('../assets/img/about-background.png')] md:h-[416px] ss:h-[260px] pt-[70px]">
         <h1 className="text-white text-xxl md:text-xxl sm:text-xl ss:text-xl md:w-[350px] ss:w-[210px] sm:w-[370px] ml-40 sm:ml-20 ss:ml-8">О нас</h1>
         <p className="text-white text-base md:w-[560px] ss:w-[290px] sm:w-[560px] ml-40 sm:ml-20 ss:ml-8">Ora – маркетинговое агентство, специализирующееся на работе с малым бизнесом.</p>
