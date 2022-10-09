@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Reklama, Uslugi } from "../components";
+import { Reklama, Uslugi, Form } from "../components";
 
 export default function Home() {
   return (
@@ -10,7 +10,10 @@ export default function Home() {
       </Head>
       <h1 className="font-bold underline">Digital Agency</h1>
       {/* <Reklama/> */}
-      <Uslugi/>
+      {/* <Uslugi/> */}
+      <div className="container">
+        <Form title="Свяжитесь с нами" text='slom' />
+      </div>
     </div>
   );
 }
