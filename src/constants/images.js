@@ -20,6 +20,7 @@ import earth from '../assets/img/earth.svg'
 import people from '../assets/img/people.svg'
 import wallet from '../assets/img/wallet.svg'
 import stonks from '../assets/img/stonks.svg'
+import correct from '../assets/img/circle-checked.svg'
 
 const images = {
   logo,
@@ -43,7 +44,8 @@ const images = {
   earth,
   people,
   wallet,
-  stonks
+  stonks,
+  correct
 };
 
 export default images

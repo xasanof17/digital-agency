@@ -8,7 +8,7 @@ const Accordion = (data) => {
   console.log(accData)
   return (
     <div className="flex flex-col justify-center items-center md:mx-30 lg:p-16 ss:p-0 rounded-xl h-auto py-20 ">
-      {accData.data.map((data,i) => {
+      {accData.data.map((data) => {
         return (
           <AccordionUI
             title={data.question}
@@ -16,8 +16,7 @@ const Accordion = (data) => {
             main={data.steps}
             Index={Index}
             setIndex={setIndex}
-            key={i}
-          />
+          ></AccordionUI>
         );
       })}
         </div>

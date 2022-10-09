@@ -9,34 +9,34 @@ const FoooterLayout = () =>{
         <h1 className="text-xl text-bluedepths mb-0">Клиенты, которые нам доверяют​​</h1>
         <div className='grid sm:grid-cols-5 sm:gap-2 ss:grid-cols-2 ss:gap-5 mt-6 '>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.airtable} alt='img'/>
+                <Image src={images.airtable}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.crunchbase} alt='img'/>
+                <Image src={images.crunchbase}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md pl-12'>
-                <Image src={images.hopwork} alt='img'/>
+                <Image src={images.hopwork}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md pl-10'>
-                <Image src={images.amazon} alt='img'/>
+                <Image src={images.amazon}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.outreach} alt='img'/>
+                <Image src={images.outreach}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md pl-12'>
-                <Image src={images.salesforce} alt='img'/>
+                <Image src={images.salesforce}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.contentsquare} alt='img'/>
+                <Image src={images.contentsquare}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.hubspot} alt='img'/>
+                <Image src={images.hubspot}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md'>
-                <Image src={images.zendesk} alt='img'/>
+                <Image src={images.zendesk}/>
             </div>
             <div className='flex items-center jusify-center border-2 border-seadrive rounded-md pl-6'>
-                <Image src={images.airbnb} alt='img'/>
+                <Image src={images.airbnb}/>
             </div>      
         </div>
         <div className='bg-blue w-[90%] rounded-md lg:h-[301px] md:h-[278px] sm:h-[274px] mt-[50px] flex sm:flex-row ss:flex-col p-[30px]'>

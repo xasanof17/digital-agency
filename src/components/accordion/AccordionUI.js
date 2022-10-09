@@ -35,6 +35,7 @@ const AccordionUI = ({ title, main, Id, Index, setIndex }) => {
             <br/>
             <li className="text-sm">{main.step_one}</li>
             <br/>
+            <li className="text-base">{main.step_sub}</li>
             <li className="text-sm">{main.step_two}</li>
             <br/>
             <li className="text-sm">{main.step_three}</li>
