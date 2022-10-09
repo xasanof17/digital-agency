@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./fonts.scss";
 @tailwind base;
 @tailwind components;
@@ -60,3 +61,19 @@ body {
   background: transparent;
   outline: none;
 }
+=======
+@import "./fonts.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1430px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+>>>>>>> 5b2c9b28ccd0742cb4c6b57ba217b13e04edcb10

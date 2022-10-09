@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "digital-agency",
   "version": "0.1.0",
@@ -32,3 +33,44 @@
     "tailwindcss": "^3.1.8"
   }
 }
+=======
+{
+  "name": "digital-agency",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "email": "xasanof17@gmail.com",
+    "name": "Xasanov Javohir",
+    "url": "https://portfoliowebapp.vercel.app"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "emailjs-com": "^3.2.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.4",
+    "react-slideshow-image": "^4.0.5",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "node-sass": "^7.0.3",
+    "postcss": "^8.4.17",
+    "prettier": "2.7.1",
+    "react-icons": "^4.4.0",
+    "sass": "^1.55.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
+>>>>>>> 5b2c9b28ccd0742cb4c6b57ba217b13e04edcb10
