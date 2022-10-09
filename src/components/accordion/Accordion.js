@@ -14,7 +14,7 @@ const Accordion = (data) => {
             key={i}
             title={data.question}
             Id={data.id}
-            children={data.steps}
+            main={data.steps}
             Index={Index}
             setIndex={setIndex}
           />

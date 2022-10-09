@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
+<<<<<<< HEAD
 const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
   const [idState, setIdState] = useState(1);
+=======
+const AccordionUI = ({ title, main, Id, Index, setIndex }) => {
+    const [idState,setIdState] = useState(1)
+>>>>>>> 5b2c9b28ccd0742cb4c6b57ba217b13e04edcb10
   const handleSetIndex = (Id) => {
     setIdState(Id);
     Index !== idState && setIndex(Id);
@@ -26,14 +31,23 @@ const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
       </div>
       {Index === Id && (
         <div className="pl-10 font-semibold  w-3/4 h-auto  rounded-md border-l-2 border-blue-300 mb-2 text-base">
-          {children.subject}
+          {main.subject}
           <ol>
+<<<<<<< HEAD
             <br />
             <li className="text-sm">{children.step_one}</li>
             <br />
             <li className="text-sm">{children.step_two}</li>
             <br />
             <li className="text-sm">{children.step_three}</li>
+=======
+            <br/>
+            <li className="text-sm">{main.step_one}</li>
+            <br/>
+            <li className="text-sm">{main.step_two}</li>
+            <br/>
+            <li className="text-sm">{main.step_three}</li>
+>>>>>>> 5b2c9b28ccd0742cb4c6b57ba217b13e04edcb10
           </ol>
         </div>
       )}

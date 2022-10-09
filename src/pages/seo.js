@@ -3,10 +3,13 @@ import Image from "next/image";
 import { images } from "../constants";
 import {accordionDataSeo} from '../constants/accordion.data'
 import Accordion from "../components/accordion/Accordion";
-import FoooterLayout from "../components/Footer.Layout";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+<<<<<<< HEAD
 import Head from "next/head";
+=======
+import FoooterLayout from '../components/Footer.Layout'
+>>>>>>> 5b2c9b28ccd0742cb4c6b57ba217b13e04edcb10
 
 export default function Seo() {
   const zoomInProperties = {
